@@ -1,3 +1,6 @@
 # HomeworkJune23
 
 Code Quiz Program
+
+So this was a lot to work on.  Like the last assignment, I took what we learned in class, then watched a dozen people do similar projects, read 18 tutorials, and then went back and worked on a module here, a module there.  I also tried different styles and methods, opting out of buttons on the main game page (I was going to use a Millionaire background), and then played around learning how to create an opacity that doesn't carry to children, how to play sounds on events, etc.  In all it was a fun project.
+
