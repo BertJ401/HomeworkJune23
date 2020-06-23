@@ -18,26 +18,26 @@ var allAudios = document.querySelectorAll('audio');
 const corrPoints = 10;
 const maxQuest = 10;
 
-function stopAllAudio(){
-  allAudios.forEach(function(audio){
+function stopAllAudio() {
+  allAudios.forEach(function (audio) {
     audio.pause();
   })
 };
 
-startGame = function() {
+startGame = function () {
   letsAudio.play();
   questionCounter = 0;
   score = 0;
   questList = [...questions];
   getNewQuestion();
 
-  };
+};
 
-getNewQuestion = function() {
+getNewQuestion = function () {
   if (questList.length === 0 || questionCounter >= maxQuest) {
     localStorage.setItem("mostRecentScore", score);
     stopAllAudio();
-    endAudio.play ();
+    endAudio.play();
     return window.location.assign("end.html");
   }
   questionCounter++;
@@ -71,7 +71,7 @@ choices.forEach(choice => {
       stopAllAudio();
       correctAudio.currentTime = 0;
       correctAudio.play();
-    } else{
+    } else {
       stopAllAudio();
       wrongAudio.currentTime = 0;
       wrongAudio.play();
@@ -86,10 +86,10 @@ choices.forEach(choice => {
   });
 });
 
-countDown = function() {
-  timerCd = timerCd-1;
-  if (timerCd<200) {
-    const minutesCd = Math.floor(timerCd/60);
+countDown = function () {
+  timerCd = timerCd - 1;
+  if (timerCd < 200) {
+    const minutesCd = Math.floor(timerCd / 60);
     var secondsCd = timerCd % 60;
     timerCount.innerText = `Time Left: ${minutesCd}:${secondsCd}`;
   }
@@ -105,7 +105,7 @@ countDown = function() {
 update = setInterval("countDown()", 1000);
 
 
-incrementScore = function(num) {
+incrementScore = function (num) {
   score += num;
   scoreText.innerText = score;
 };
