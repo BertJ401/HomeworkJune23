@@ -54,7 +54,7 @@ let questions = [
     choice2: "console.log",
     choice3: "prompt",
     choice4: "alert",
-    answer: 1
+    answer: 2
   },
   {
     question: "Which is NOT a method to set variables?",
@@ -62,7 +62,7 @@ let questions = [
     choice2: "const",
     choice3: "var",
     choice4: "man",
-    answer: 1
+    answer: 4
   },
   {
     question: "Which is correct order, outside>in?",
