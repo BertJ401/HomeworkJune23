@@ -75,6 +75,7 @@ choices.forEach(choice => {
       stopAllAudio();
       wrongAudio.currentTime = 0;
       wrongAudio.play();
+      timerCd=timerCd-10;
     }
 
     selectedChoice.parentElement.classList.add(classToApply);
